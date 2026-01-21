@@ -11,40 +11,52 @@
             background-color: #f4f6f8;
             color: #333;
         }
+
+        /* HEADER COM IMAGEM DE FUNDO */
         header {
-            background: #003366;
+            background:
+                linear-gradient(rgba(0, 51, 102, 0.75), rgba(0, 51, 102, 0.75)),
+                url("fundo.jpg") center/cover no-repeat;
             color: white;
-            padding: 40px 20px;
+            padding: 100px 20px;
             text-align: center;
         }
+
         header h1 {
             margin-bottom: 10px;
+            font-size: 36px;
         }
+
         section {
             padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
         }
+
         .services, .benefits {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
+
         .card {
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
+
         .card h3 {
             color: #003366;
         }
+
         .cta {
             background: #003366;
             color: white;
             text-align: center;
             padding: 40px 20px;
         }
+
         .cta a {
             display: inline-block;
             margin-top: 20px;
@@ -55,12 +67,45 @@
             border-radius: 5px;
             font-weight: bold;
         }
+
         footer {
             background: #222;
             color: #ccc;
             text-align: center;
             padding: 20px;
             font-size: 14px;
+        }
+
+        /* ======= RESPONSIVO PARA CELULAR ======= */
+        @media (max-width: 600px) {
+            header {
+                padding: 60px 15px;
+            }
+            header h1 {
+                font-size: 28px;
+            }
+            section {
+                padding: 30px 15px;
+                max-width: 100%;
+            }
+            .services, .benefits {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .cta {
+                padding: 30px 15px;
+            }
+            .cta a {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+            footer {
+                padding: 15px 10px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -116,13 +161,16 @@
 <div class="cta">
     <h2>Regularize sua embarcação agora mesmo</h2>
     <p>Evite multas e navegue com tranquilidade.</p>
-    <a href="#">Entrar em Contato</a>
+    <a href="https://wa.me/5541999349900" target="_blank" rel="noopener noreferrer">Entrar em Contato</a>
 </div>
 
 <footer>
     <p>© 2026 - Licenciamento Móvel Marítimo | Todos os direitos reservados</p>
-    <p>Email: contato@seudominio.com | Telefone: (00) 00000-0000</p>
+    <p>Email: vitor.sn.souza@gmail.com | Telefone: (41) 999349900</p>
 </footer>
 
 </body>
 </html>
+
+
+
